@@ -18,10 +18,7 @@ requirements:
     - pip
     - python
   run:
-    # TODO: pygmt does not yet work with gmt conda package on Windows, see this PR:
-    # https://github.com/GenericMappingTools/pygmt/pull/313. Once that is merged,
-    # remove the [not win] tag
-    - gmt >=6.0.0,<7.0  # [not win]
+    - gmt >=6.0.0,<7.0
     - netCDF4
     - numpy
     - packaging
@@ -34,7 +31,7 @@ test:
   # https://github.com/GenericMappingTools/pygmt/pull/313. Once that is merged,
   # remove the [not win] tag to enable tests on Windows
   imports:
-    - pygmt  # [not win]
+    - pygmt
     - pygmt.tests  # [not win]
 
 about:
