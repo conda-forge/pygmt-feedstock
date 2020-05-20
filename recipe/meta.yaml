@@ -6,8 +6,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d95c2825c3bc368b17e6c5c308179a05f4539aaf2fef4379b6c7bb6125882113
+  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  #sha256: d95c2825c3bc368b17e6c5c308179a05f4539aaf2fef4379b6c7bb6125882113
+  url: https://github.com/GenericMappingTools/pygmt/archive/master.tar.gz
 
 build:
   number: 1
@@ -27,12 +28,9 @@ requirements:
     - xarray
 
 test:
-  # TODO: pygmt does not yet work with gmt conda package on Windows, see this PR:
-  # https://github.com/GenericMappingTools/pygmt/pull/313. Once that is merged,
-  # remove the [not win] tag to enable tests on Windows
   imports:
     - pygmt
-    - pygmt.tests  # [not win]
+    - pygmt.tests
 
 about:
   home: https://www.pygmt.org
