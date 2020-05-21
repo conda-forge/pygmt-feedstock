@@ -1,1 +1,0 @@
-export GMT_LIBRARY_PATH=
