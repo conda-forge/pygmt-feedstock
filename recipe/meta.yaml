@@ -1,5 +1,5 @@
 {% set name = "pygmt" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7eb1d4957b10b2281376606d7f40896da4d657988e1c93a2d1224750d3e1dbd0
+  sha256: 2af8a6c54c6de1568d7e83d4542a14aef6c6bcf48d1d625623860e89790a4923
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'A Python interface for the Generic Mapping Tools'
+  summary: A Python interface for the Generic Mapping Tools
   doc_url: https://www.pygmt.org/
   dev_url: https://github.com/GenericMappingTools/pygmt
 
