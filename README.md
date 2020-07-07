@@ -5,7 +5,7 @@ Home: https://www.pygmt.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python interface for the Generic Mapping Tools
 
