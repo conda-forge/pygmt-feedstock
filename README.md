@@ -5,11 +5,13 @@ Home: https://www.pygmt.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygmt-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python interface for the Generic Mapping Tools
 
+Development: https://github.com/GenericMappingTools/pygmt
 
+Documentation: https://www.pygmt.org/
 
 Current build status
 ====================
