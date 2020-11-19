@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - gmt >=6.1.1,<7.0
     - netCDF4
