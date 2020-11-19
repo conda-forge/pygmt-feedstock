@@ -10,26 +10,29 @@ source:
   sha256: b4c825c790f28c619c176044c9e8836b7ca4a5125b93b2b9f8ee9039f16b21c3
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - gmt >=6.1.1,<7.0
     - netCDF4
     - numpy
     - packaging
     - pandas
-    - python
+    - python >=3.6
     - xarray
 
 test:
   imports:
     - pygmt
     - pygmt.tests
+  commands:
+    - python -c "import pygmt; pygmt.show_versions()"
 
 about:
   home: https://www.pygmt.org
