@@ -31,6 +31,8 @@ test:
   imports:
     - pygmt
     - pygmt.tests
+  commands:
+    - python -c "import pygmt; pygmt.show_versions()"
 
 about:
   home: https://www.pygmt.org
