@@ -11,13 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools >=45
+    - setuptools_scm >=3.4
+    - toml
   run:
     - gmt >=6.1.1,<7.0
     - netCDF4
@@ -32,6 +35,7 @@ test:
     - pygmt
     - pygmt.tests
   commands:
+    - python -c "import pygmt; assert pygmt.__version__ != 'v0.0.0'"
     - python -c "import pygmt; pygmt.show_versions()"
 
 about:
@@ -48,3 +52,4 @@ extra:
     - moorepants
     - seisman
     - weiji14
+    - willschlitzer
