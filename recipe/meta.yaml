@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,6 +32,7 @@ test:
     - pygmt
     - pygmt.tests
   commands:
+    - python -c "import pygmt; assert pygmt.__version__ != 'v0.0.0'"
     - python -c "import pygmt; pygmt.show_versions()"
 
 about:
