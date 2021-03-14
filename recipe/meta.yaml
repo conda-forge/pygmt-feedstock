@@ -1,5 +1,5 @@
 {% set name = "pygmt" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9033cd040ed4710e61397fb4c03a0577b8aa2fc9e3618437c2a7b3dfa97cf4a4
+  sha256: b8b7450a9f3f5b53002eb6d5057769d4281bf605f084bc4dc7290e873945fb9e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv
 
 requirements:
