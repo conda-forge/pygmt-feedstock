@@ -11,20 +11,20 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools >=45
     - setuptools_scm >=3.4
     - toml
   run:
     - gmt >=6.2.0,<7.0
     - netCDF4
-    - numpy >=1.17
+    - numpy >=1.18
     - packaging
     - pandas
     - python >=3.7
