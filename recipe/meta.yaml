@@ -1,5 +1,5 @@
 {% set name = "pygmt" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ba65d2beef62b947bb3d3534fcf5ba02ec5ef9eb2576354059378f5557c1965
+  sha256: 3e83e4fb01046a5e240dfe72f88e0767703934ee7ae01e7d1f9cc883f5b1f0f1
 
 build:
   noarch: python
