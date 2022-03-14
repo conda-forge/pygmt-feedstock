@@ -17,17 +17,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools >=45
     - setuptools_scm >=3.4
     - toml
   run:
     - gmt >=6.2.0,<7.0
     - netCDF4
-    - numpy >=1.18
+    - numpy >=1.19
     - packaging
     - pandas
-    - python >=3.7
+    - python >=3.8
     - xarray
 
 test:
