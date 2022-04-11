@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.8
     - setuptools >=45
-    - setuptools_scm >=3.4
+    - setuptools_scm >=6.2
     - toml
   run:
     - gmt >=6.3.0,<7.0
