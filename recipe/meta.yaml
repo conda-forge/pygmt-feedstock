@@ -1,5 +1,5 @@
 {% set name = "pygmt" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 227d372cf725f06e2b0cb33ff62edf7cadd862755e0e9d2aa6caf285d16d322a
+  sha256: ac25944cafb2d8e378dd12d8ccfc20c84161162d1f68834256857f562f80cf5c
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
   run:
     - gmt >=6.3.0,<7.0
     - netCDF4
-    - numpy >=1.19
+    - numpy >=1.20
     - packaging
     - pandas
     - python >=3.8
