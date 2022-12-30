@@ -1,5 +1,5 @@
 {% set name = "pygmt" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac25944cafb2d8e378dd12d8ccfc20c84161162d1f68834256857f562f80cf5c
+  sha256: 2c53245fcd2f001f71e12cb1d7206179c37028049c116021f09df7ea61053378
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools >=45
+    - setuptools >=64
     - setuptools_scm >=6.2
     - toml
   run:
