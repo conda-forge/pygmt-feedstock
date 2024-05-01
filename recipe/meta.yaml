@@ -27,7 +27,7 @@ requirements:
     - numpy >=1.23
     - packaging
     - pandas >=1.5
-    - python >=3.9
+    - python >=3.10
     - xarray >=2022.06
 
 test:
