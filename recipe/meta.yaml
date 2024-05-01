@@ -1,5 +1,5 @@
 {% set name = "pygmt" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 092a4415f9c26a9ba937e110d9cb725fe638eeae85f9b0cc8819f57b16a3740f
+  sha256: 5ec644c4ee45b5fddc84d7dfe88a449ba230ed75224396321696c00b4357f8f4
 
 build:
   noarch: python
@@ -26,9 +26,9 @@ requirements:
     - netcdf4
     - numpy >=1.23
     - packaging
-    - pandas
+    - pandas >=1.5
     - python >=3.9
-    - xarray
+    - xarray >=2022.06
 
 test:
   imports:
