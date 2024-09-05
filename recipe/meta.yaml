@@ -24,11 +24,11 @@ requirements:
   run:
     - gmt >=6.3.0,<7.0
     - netcdf4
-    - numpy >=1.23
+    - numpy >=1.24
     - packaging
     - pandas >=1.5
     - python >=3.10
-    - xarray >=2022.06
+    - xarray >=2022.09
 
 test:
   imports:
