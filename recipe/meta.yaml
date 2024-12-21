@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pygmt" %}
 {% set version = "0.13.0" %}
 
@@ -6,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f44909ff7a87cac537a5eaad37168c324d74a99aef5416c565dce2fe6a7beb39
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools >=64
     - setuptools_scm >=6.2
     - toml
@@ -27,10 +28,12 @@ requirements:
     - numpy >=1.24
     - packaging
     - pandas >=1.5
-    - python >=3.10
+    - python >={{ python_min }}
     - xarray >=2022.09
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pygmt
   commands:
