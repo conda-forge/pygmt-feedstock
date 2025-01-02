@@ -23,7 +23,7 @@ requirements:
     - setuptools_scm >=6.2
     - toml
   run:
-    - gmt >=6.3.0,<7.0
+    - gmt >=6.4.0,<7.0
     - netcdf4
     - numpy >=1.25
     - packaging
