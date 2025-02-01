@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "pygmt" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e9c58bb4644dad364466e2eeebc1ec0508b730a4ee06c6daf541a6a481b00f54
+  sha256: fe682c20fcf2a18a479640df833849134caff264ad7f7fb85b137b80e79089c0
 
 build:
   noarch: python
