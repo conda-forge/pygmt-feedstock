@@ -24,7 +24,6 @@ requirements:
     - toml
   run:
     - gmt >=6.4.0,<7.0
-    - netcdf4
     - numpy >=1.26
     - packaging >=24.2
     - pandas >=2.1
