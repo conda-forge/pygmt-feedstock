@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "pygmt" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5921db8cd71d0da5d60afee36eaba496c953797e38b53b32583ed4ae61fab640
+  sha256: 06d7581bc35641db318c418aba02163bc519ba267a5a60b5cc419eee40390503
 
 build:
   noarch: python
@@ -26,9 +26,9 @@ requirements:
     - gmt >=6.4.0,<7.0
     - numpy >=1.26
     - packaging >=24.2
-    - pandas >=2.1
+    - pandas >=2.2
     - python >={{ python_min }}
-    - xarray >=2023.07
+    - xarray >=2023.10
 
 test:
   requires:
