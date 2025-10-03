@@ -3,7 +3,7 @@ About pygmt-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygmt-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.pygmt.org
+Home: https://www.pygmt.org/
 
 Package license: BSD-3-Clause
 
