@@ -152,6 +152,3 @@ Feedstock Maintainers
 * [@weiji14](https://github.com/weiji14/)
 * [@willschlitzer](https://github.com/willschlitzer/)
 
-
-<!-- dummy commit to enable rerendering -->
-

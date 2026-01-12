@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: 3.11
   name: pygmt
-  version: 0.17.0
+  version: "0.18.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 06d7581bc35641db318c418aba02163bc519ba267a5a60b5cc419eee40390503
+  sha256: 9b285ed422c760cc043106205cf6d67085442ecbb86aaecdaabedd8507aae740
 
 build:
   number: 0
