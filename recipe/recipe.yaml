@@ -1,9 +1,9 @@
 schema_version: 1
 
 context:
-  python_min: 3.12
+  python_min: "3.12"
   name: pygmt
-  version: "0.18.0"
+  version: "0.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 9b285ed422c760cc043106205cf6d67085442ecbb86aaecdaabedd8507aae740
+  sha256: e1f3404fc97f421038d32ecfd726381f539e93e4eed6d39f131511edd2424c0e
 
 build:
   number: 0
@@ -27,11 +27,11 @@ requirements:
     - toml
   run:
     - gmt >=6.5.0,<7.0
-    - numpy >=2.0
+    - numpy >=2.1
     - packaging >=24.2
-    - pandas >=2.2
+    - pandas >=2.3
     - python >=${{ python_min }}
-    - xarray >=2024.5
+    - xarray >=2024.7
 
 tests:
   - python:
